@@ -41,6 +41,7 @@ def load_scutfbp():
     test_dataloader = DataLoader(test_dataset, batch_size=cfg['batch_size'],
                                  shuffle=False, num_workers=50, pin_memory=True)
 
+    print('done')
     return {'train': train_dataloader, 'val': test_dataloader, 'test': test_dataloader}
 
 
